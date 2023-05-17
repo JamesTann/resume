@@ -1,0 +1,98 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{article}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=9d7fc7c5614241ad1df7bc130c68f1ee}{%
+           family={Branting},
+           familyi={B\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28057d9c6019456a713bb21584326614}{%
+           family={McLeod},
+           familyi={M\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b1b77b0eea5066e32f6dcf14c6fdc7e}{%
+           family={Howell},
+           familyi={H\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1eccd64c1a5e13376c82d458a853eea9}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Brandy},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5096cf58613a458de41d784ed4034da0}{%
+           family={Profitt},
+           familyi={P\bibinitperiod},
+           given={Brett},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e033fbede757ba82dd34b700d780dd4c}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97f7a7676e0e1b8cf09da2fffcbff766}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dab43c78538357adbb31f1c41804582}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df03294f1ebe373f4638bb09f578e08a}
+      \strng{fullhash}{2377e8ac3404c0fd9588a1b5b25b484d}
+      \strng{bibnamehash}{42cf077cd3b06bd3333e929f8f68e90b}
+      \strng{authorbibnamehash}{42cf077cd3b06bd3333e929f8f68e90b}
+      \strng{authornamehash}{df03294f1ebe373f4638bb09f578e08a}
+      \strng{authorfullhash}{2377e8ac3404c0fd9588a1b5b25b484d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence and Law}
+      \field{month}{07}
+      \field{title}{A computational model of facilitation in online dispute resolution}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/s10506-022-09318-7
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

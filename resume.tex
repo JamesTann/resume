@@ -1,0 +1,225 @@
+% setup document
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% page dimensions
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% package imports
+\usepackage{paracol}
+\usepackage{ragged2e}
+\usepackage[backend=biber,style=apa6,sorting=ydnt]{biblatex}
+\usepackage[rm]{roboto} % font
+\usepackage[defaultsans]{lato} % font
+\usepackage{CJKutf8} % font
+
+% define layout for biblatex
+\defbibheading{pubtype}{\cvsubsection{#1}}
+\renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
+\AtEveryBibitem{\makebox[\bibhang][l]{\faFile*[regular]}}
+\setlength{\bibitemsep}{0.25\baselineskip}
+\setlength{\bibhang}{1.25em}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% define colors
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{Sunglow}{HTML}{ffc857}
+\definecolor{Gunmetal}{HTML}{182825}
+\definecolor{Azul}{HTML}{016fb9}
+\definecolor{PacificCyan}{HTML}{22AED1}
+\definecolor{Xanthous}{HTML}{e6af2e}
+\definecolor{TigersEye}{HTML}{BC6C25}
+\definecolor{EarthYellow}{HTML}{DDA15E}
+\definecolor{LightSkyBlue}{RGB}{144, 194, 231}
+\definecolor{AirForceBlue}{RGB}{78, 128, 152}
+\definecolor{FrenchGray}{RGB}{206, 211, 220}
+\definecolor{Snow}{RGB}{252, 247, 248}
+\definecolor{RawUmber}{HTML}{A05E2C}
+\definecolor{Madder}{HTML}{a31621}
+
+% set styles
+\colorlet{name}{Gunmetal}
+\colorlet{tagline}{SlateGrey}
+\colorlet{heading}{SlateGrey}
+\colorlet{headingrule}{SlateGrey}
+\colorlet{subheading}{SlateGrey}
+\colorlet{accent}{SlateGrey}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{SlateGrey}
+
+% command for heading
+\newcommand{\linkicon}[3]{#1\href{#2}{#3}}
+
+% change altacv fonts
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% change the bullets for itemize and ratings for altacv
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% add bib for publications
+\addbibresource{resume.bib}
+
+\begin{document}
+
+% heading column
+\columnratio{0.5}
+\begin{paracol}{2}
+{\namefont\color{name}\MakeUppercase{James D. Tanner}\par}
+\medskip
+{\taglinefont\color{tagline}Senior Software Engineer}
+\faMapMarker Cambridge, MA
+
+% contact column
+\switchcolumn
+\begin{flushright}
+\linkicon{\faGlobe}{http://jamestanner.me}{jamestanner.me}
+\linkicon{\faLinkedin}{https://linkedin.com/in/james-d-tanner}{james-d-tanner}
+\linkicon{\faGithub}{https://github.com/JamesTann}{JamesTann} \\
+\medskip
+\linkicon{\faAt}{mailto:jdtanner103@gmail.com}{jdtanner103@gmail.com}
+\linkicon{\faPhone}{tel:9788803688}{978-880-3688}
+\end{flushright}
+
+\end{paracol}
+
+\columnratio{0.62}
+\begin{paracol}{2}
+
+\cvsection{Education}
+
+\large\color{emphasis}\textbf{Dartmouth College} \small\faUniversity Hanover, NH
+\hfill\small\faGraduationCap June 2021\par
+\textbf{\color{subheading}Bachelor of Arts \textit{(cum laude)}} \hfill GPA 3.81/4.0\par
+\textbf{Majors:} Computer Science and Asian Societies Cultures and Languages \par
+\textbf{Citations:} Database Systems, \begin{CJK*}{UTF8}{gbsn}鲁迅与胡适\end{CJK*}, and Senior Design/Implementation \par
+\textbf{Activities:} Zeta Psi Fraternity, Aquinas House Catholic Student Center \par
+\medskip
+\large\color{emphasis}\textbf{Beijing Normal University} \small\faUniversity Beijing, China
+\hfill\small\faGraduationCap Fall 2018\par
+\textbf{\color{subheading}Language Study Abroad Program}\par
+
+\cvsection{Relevant Experience}
+
+\large\color{emphasis}\textbf{MITRE} \small\faSuitcase Bedford, MA (Hybrid)
+\hfill\small\faCalendar April 2022-The Present\par
+\textbf{\color{subheading}Software Engineer}\par
+\smallskip
+\normalsize
+\begin{itemize}
+\item Led Task team (designers and engineers) to develop prototype and deliver on updates developed from user feedback
+\item Led development team as Scrum Master to plan, execute, and evaluate progress during regular Sprint cycles and report to sponsors
+\item Single-handedly created and demoed prototype to showcase newly developed framework to multiple sponsors and secure funding
+\item Collaborated with human-centered engineers to convey requirements from sponsors and guide design and implementation
+\item Stood up Gitlab CI/CD pipelines to automatically deploy software company-wide, enabling faster development and testing
+\end{itemize}
+\divider
+
+\large\color{emphasis}\textbf{MITRE} \small\faSuitcase Bedford, MA (Hybrid)
+\hfill\small\faCalendar July 2021-April 2022\par
+\textbf{\color{subheading}Associate Software Engineer}\par
+\smallskip
+\normalsize
+\begin{itemize}
+\item Coordinated manual and automated testing as the Quality Assurance Lead for a large federal research ecosystem
+\item Mentored interns and helped onboard new hires to teach business strategy and culture and provide technical expertise
+\item Enhanced dev-ops processes by creating custom graphical interfaces for executing Ansible scripts and logging errors
+\item Created full-stack prototype of a web-based dashboard to support natural language processing research (see publications)
+\item Modernized full-stack web applications using FastAPI and Vue3
+\end{itemize}
+\divider
+
+\large\color{emphasis}\textbf{MITRE} \small\faDesktop Fully Remote
+\hfill\small\faCalendar Summer 2020, Decemember 2020\par
+\textbf{\color{subheading}Software Development Intern}\par
+\smallskip
+\normalsize
+\begin{itemize}
+\item Contributed to full-stack development team to create graphic visualizations of user data for large public research ecosystem
+\item Developed modern customizable embedded header for internal sites using web components and Webpack from scratch
+\item Created Node.js scripts to automatically upload files to IBM Cloud
+\end{itemize}
+
+\begin{center}
+\textbf{\textit{Complete list of internship experience can be found on \href{https://linkedin.com/in/james-d-tanner}{my LinkedIn.}}}
+\end{center}
+
+\cvsection{Publications}
+
+%% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+%% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+\mynames{Tanner/T.\bibnamedelima James}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+\nocite{*}
+\printbibliography[heading=none]
+
+\switchcolumn
+
+\cvsection{Active Clearances}
+
+\begin{itemize}
+\item DoD Top Secret Clearance
+\item VA Suitability Moderate (MBI)
+\item DHS EOD Granted IT Medium (5C)
+\end{itemize}
+
+\cvsection{Technical Skills}
+
+\cvtag{Full-Stack}
+\cvtag{Dev Ops}
+\cvtag{Agile}\\
+\medskip
+\cvtag{Documentation}
+\cvtag{Databases}
+\cvtag{Demos}
+
+\cvsection{Languages}
+
+\cvskill{Python}{5}
+\cvskill{Typescript}{5}
+\cvskill{Docker}{4}
+\cvskill{Rust}{3}
+\cvskill{Java}{3}
+\cvskill{Matlab}{3}
+\cvskill{C\#}{3}
+
+\divider
+
+\cvskill{Vue3}{5}
+\cvskill{Flask}{4}
+\cvskill{React}{4}
+\cvskill{SQLAlchemy}{4}
+\cvskill{Node.js}{3}
+
+\divider
+
+\cvskill{Postgres}{4}
+\cvskill{MySQL/MariaDB}{4}
+\cvskill{ElasticSearch}{3}
+\cvskill{MongoDB}{3}
+\medskip
+
+\cvsection{Outside the Office}
+
+\cvachievement{\faToolbox}{Woodworking \& Tinkering}{Whether it be software or physical, I love making things. Woodworking is a hobby I picked up through charity work for Habitat for Humanity in high school. I focus on mostly functional furniture and smaller projects for myself and others.}
+
+\divider
+
+\cvachievement{\faMapSigns}{Hiking \& Camping}{I make a habit of going on a day hike or weekend camping trip at least once a month in the summer. I am a huge National Parks fan and next on my list is the Dry Tortugas.}
+
+\divider
+
+\cvachievement{\faVideo}{Film}{I have watched over 600 films on Letterboxd and appreciate both modern and classic films. I especially gravitate towards independent short films and vignettes.}
+
+\end{paracol}
+
+\end{document}
